@@ -1,0 +1,113 @@
+{
+  "profile": {
+    "reported_fur": {
+      "n": 52,
+      "k": 4,
+      "fire": 0.07692307692307693,
+      "lo": 0.03031885429734589,
+      "hi": 0.1817381068212467,
+      "mean_max": 0.07645127337445082,
+      "median_max": 4.117434400541242e-05,
+      "area": 0.043314366581749246,
+      "silent": 0.9230769230769231
+    },
+    "reported_control": {
+      "n": 52,
+      "k": 31,
+      "fire": 0.5961538461538461,
+      "lo": 0.4606733176249609,
+      "hi": 0.7184046457571771,
+      "mean_max": 0.6143442333609878,
+      "median_max": 0.9983178675174713,
+      "area": 0.49118971695790237,
+      "silent": 0.3269230769230769
+    },
+    "seed1_fur": {
+      "n": 52,
+      "k": 8,
+      "fire": 0.15384615384615385,
+      "lo": 0.08007589590882647,
+      "hi": 0.2752434359154765,
+      "mean_max": 0.1547497722668735,
+      "median_max": 0.0009278609359171242,
+      "area": 0.09789916061199756,
+      "silent": 0.7692307692307693
+    },
+    "seed1_control": {
+      "n": 52,
+      "k": 22,
+      "fire": 0.4230769230769231,
+      "lo": 0.29867847908860445,
+      "hi": 0.558059150205685,
+      "mean_max": 0.4541774611591161,
+      "median_max": 0.14285868406295776,
+      "area": 0.3039822423985622,
+      "silent": 0.38461538461538464
+    },
+    "seed2_fur": {
+      "n": 52,
+      "k": 2,
+      "fire": 0.038461538461538464,
+      "lo": 0.010611488322077554,
+      "hi": 0.12981428744365978,
+      "mean_max": 0.0529733362755171,
+      "median_max": 7.083292439347133e-05,
+      "area": 0.02141121272805071,
+      "silent": 0.9038461538461539
+    },
+    "seed2_control": {
+      "n": 52,
+      "k": 32,
+      "fire": 0.6153846153846154,
+      "lo": 0.47959626940741784,
+      "hi": 0.7352972866511478,
+      "mean_max": 0.6152861781475062,
+      "median_max": 0.9997249841690063,
+      "area": 0.5055843325930472,
+      "silent": 0.3269230769230769
+    },
+    "seed3_fur": {
+      "n": 52,
+      "k": 2,
+      "fire": 0.038461538461538464,
+      "lo": 0.010611488322077554,
+      "hi": 0.12981428744365978,
+      "mean_max": 0.041988082312186106,
+      "median_max": 5.259095996734686e-05,
+      "area": 0.016811381995895318,
+      "silent": 0.9230769230769231
+    },
+    "seed3_control": {
+      "n": 52,
+      "k": 25,
+      "fire": 0.4807692307692308,
+      "lo": 0.35103894702884453,
+      "hi": 0.6131454602947278,
+      "mean_max": 0.4968696043343138,
+      "median_max": 0.4237852394580841,
+      "area": 0.32097027549685736,
+      "silent": 0.40384615384615385
+    }
+  },
+  "deltas": {
+    "reported run": -0.537892959986537,
+    "seed 1": -0.2994276888922426,
+    "seed 2": -0.562312841871989,
+    "seed 3": -0.4548815220221277
+  },
+  "n_negative": 4,
+  "verdict": "the direction reproduces in four of four runs",
+  "rule": "Per seed, compare the treatment arm against its own matched control at epoch 4 in\nmean max probability over the 52 dry grass images (the Table 6 quantity).\n  4 of 4 negative -> \"the direction reproduces in four of four runs\"\n  3 of 4 negative -> \"in three of four, and at seed n it does not\" (as 7.1 handles mud and rain)\n  fewer           -> report the count plainly; no claim of broad reach\nThe row goes into Table 6 either way. Fire rates at tau 0.85 carry Wilson intervals and are\nsecondary; mean max probability is the pre-registered quantity.",
+  "checkpoints": {
+    "reported_fur": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_smashed_furfix/smashed_furfix_ep4.pth",
+    "reported_control": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_smashed_control/smashed_control_ep4.pth",
+    "seed1_fur": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_seeds/seed1_fur/ep4.pth",
+    "seed1_control": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_seeds/seed1_control/ep4.pth",
+    "seed2_fur": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_seeds/seed2_fur/ep4.pth",
+    "seed2_control": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_seeds/seed2_control/ep4.pth",
+    "seed3_fur": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_seeds/seed3_fur/ep4.pth",
+    "seed3_control": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/checkpoints_seeds/seed3_control/ep4.pth"
+  },
+  "images": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/bosene1/code/Users/bosene/drygrass",
+  "transformers": "5.13.0"
+}
