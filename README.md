@@ -1,4 +1,4 @@
-# Patched, Not Repaired — artifact
+# Patched, Not Repaired, artifact
 
 Probes, evaluation code, per-epoch traces and benchmark specification for
 
@@ -8,7 +8,7 @@ Probes, evaluation code, per-epoch traces and benchmark specification for
 
 The paper's claim: a low benign false-positive rate after hard-negative correction
 establishes that the evaluated manifestations of a failure have been suppressed, not
-that the failure mode has been removed — the two are separated by the part of input
+that the failure mode has been removed, the two are separated by the part of input
 space the evaluation does not reach.
 
 **What is here:** the probe implementations, the evaluation/scoring harness, the
